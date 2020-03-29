@@ -1,0 +1,15 @@
+{
+    "books":[
+        {
+            "id":"9788576082675",
+            "isbn":"9788576082675",
+            "name":"Código Limpo - Habilidades Práticas do Agile Software",
+            "coverUrl": "https://kbimages1-a.akamaihd.net/5ff5d67b-4a9f-4de3-a567-d4a7b53f8a5f/166/300/False/clean-code.jpg",
+            "rating":4,
+            "promotionalPrice":39.99,
+            "price": 99.9,
+            "score":3.5
+
+        }
+    ]
+}
