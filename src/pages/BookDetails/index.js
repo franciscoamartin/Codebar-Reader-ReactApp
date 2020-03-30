@@ -4,6 +4,8 @@ import { Container } from './styles';
 import Info from './Info';
 import { getBook } from '../../services/books';
 import GeneralScore from './GeneralScore';
+import Scores from './Scores';
+import Extra from './Extra';
 
 function BookDetails() {
     const [book, setBook] = useState({isbn: null});
@@ -23,6 +25,8 @@ function BookDetails() {
                 <Container>
                     <Info book={book} />
                     <GeneralScore book={book}/>
+                    <Scores book={book}/>
+                    <Extra book={book}/>
                 </Container>
             )}
         </>

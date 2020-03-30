@@ -1,15 +1,41 @@
 {
-    "books":[
+    "books": [
         {
-            "id":"9788576082675",
-            "isbn":"9788576082675",
-            "name":"Código Limpo - Habilidades Práticas do Agile Software",
+            "id": "9788576082675",
+            "isbn": "9788576082675",
+            "name": "Código Limpo - Habilidades Práticas do Agile Software",
             "coverUrl": "https://kbimages1-a.akamaihd.net/5ff5d67b-4a9f-4de3-a567-d4a7b53f8a5f/166/300/False/clean-code.jpg",
-            "rating":4,
-            "promotionalPrice":39.99,
+            "rating": 4,
+            "promotionalPrice": 39.99,
             "price": 99.9,
-            "score":3.5
-
+            "score": 4.5,
+            "scores": [
+                {
+                    "name": "Tradução",
+                    "value": 3.5
+                },
+                {
+                    "name": "Códigos",
+                    "value": 5
+                },
+                {
+                    "name": "Comunidade",
+                    "value": 5
+                },
+                {
+                    "name": "Exemplos",
+                    "value": 3.7
+                }
+            ],
+            "tecnologies": [
+                "Java",
+                "TDD",
+                "Arquitetura"
+            ],
+            "requirements": [
+                "Java"
+            ],
+            "description": "Mesmo um código ruim pode funcionar, mas se ele não for limpo, pode acabar com uma empresa de desenvolvimento. Perdem-se a cada ano horas incontáveis e recursos importantes devido a um código mal escrito. Mas nçao precisa ser assim."
         }
     ]
 }
