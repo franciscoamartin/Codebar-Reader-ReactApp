@@ -11,7 +11,7 @@ export default function Routes() {
         <Route path="/book-details/:isbn">
           <BookDetails />
         </Route>
-        <Route exact path="/"/>
+        <Route exact path="/home"/>
         <Main/>
         <Route/>
       </Switch>

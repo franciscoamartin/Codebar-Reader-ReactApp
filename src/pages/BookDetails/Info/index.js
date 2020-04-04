@@ -2,10 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Container, Cover } from './styles';
 import StarRatings from 'react-star-ratings';
+import {Link} from 'react-router-dom';
+import {MdArrowBack} from 'react-icons/md';
 
 const Info = ({ book }) => {
     return (
         <Container>
+            <Link className="go-back" to="/">
+            <MdArrowBack size={32} color="#2ecc71"/>
+            </Link>
             <Cover src={book.coverUrl} />
                 <h4 className="name">{book.name}</h4>
                 <div className="book-rating">

@@ -5,6 +5,13 @@ display: flex;
 flex-direction: column;
 padding: 10px;
 
+.go-back{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+}
+
 .name{
     font-size: 26px;
     text-align: center;

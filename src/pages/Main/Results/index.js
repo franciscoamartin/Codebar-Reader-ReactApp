@@ -5,14 +5,25 @@ import { Container, Wrapper, Cover, Info, ActionButtons } from './styles';
 import { getBook } from '../../../services/books';
 import StarRatings from 'react-star-ratings';
 import { MdArrowForward } from 'react-icons/md';
+
 function Results({ isbn }) {
 
     const [book, setBook] = useState();
 
     useEffect(() => {
         const loadBook = async () => {
-            const response = await getBook(isbn);
-            setBook(response);
+            try {
+                const response = await getBook(isbn);
+                setBook(response);
+            } catch (e) {
+                if (e.response && e.response.status === 404) {
+                    console.info('ISBN não encontrado na base de dados.', e);
+                    alert('Desculpe, este livro não foi encontrado na nossa base de dados.');
+                } else {
+                    console.error('Erro ao recuperar os dados do servidor.');
+                    alert('Erro ao recuperar os dados do servidor, por favor esteja conectado a Internet.');
+                }
+            }
         };
         loadBook();
     }, [isbn]);
